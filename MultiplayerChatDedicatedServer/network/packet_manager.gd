@@ -15,12 +15,7 @@ func _process(delta):
 		
 		match int(data["type"]):
 			PacketTypes.send_message_request:
-				var other_peers = Network.peers_connected
-#				other_peers.erase(packet_peer)
-				print(Network.peers_connected)
-				for peer in other_peers:
-					Network.send_packet(packet, peer)
-				
+				Network.send_packet(packet)
 				ChatManager.add_message(data["value"])
 
 func create_packet(packet_type: PacketTypes, value: Variant):

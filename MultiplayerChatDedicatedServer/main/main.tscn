@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgqjk57ubrj24"]
+
+[ext_resource type="PackedScene" uid="uid://cgfkwwwbvui4" path="res://network/web_window.tscn" id="1_gko7t"]
+
+[node name="main" type="Node"]
+
+[node name="Window" parent="." instance=ExtResource("1_gko7t")]

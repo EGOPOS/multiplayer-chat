@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://0mgar51gwlc0"]
+
+[ext_resource type="PackedScene" uid="uid://cgfkwwwbvui4" path="res://main/web_window.tscn" id="2_em3c0"]
+
+[node name="main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -31.0
+offset_top = -21.0
+offset_right = -31.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Window" parent="." instance=ExtResource("2_em3c0")]
+gui_embed_subwindows = true
+initial_position = 2
+size = Vector2i(500, 200)
+always_on_top = true
